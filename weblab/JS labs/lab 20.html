@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Event Handling </title>
+  <style>
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mouse Event Handling Example</h2>
+ 
+  <div 
+    id="target" 
+    style="width: 200px; height: 100px; background-color: lightblue; cursor: pointer;"
+    onmouseover="document.getElementById('output').textContent = 'Mouse Over Event'"
+    onmouseout="document.getElementById('output').textContent = 'Mouse Out Event'"
+    onclick="document.getElementById('output').textContent = 'Click Event'"
+  >
+    Hover or click me!
+  </div>
+  
+  <div id="output"></div>
+</body>
+</html>

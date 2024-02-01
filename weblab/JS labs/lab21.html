@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+<title>Event Handling in Form Example </title>
+</head>
+<body>
+<script type="text/javascript">
+function printvalue(){
+var name = document.form1.name.value;
+alert("bienvenido:" +name);
+}
+</script>
+<form name="form1">
+Your Name Please :
+<input type="text" name= "name"/>
+<input type="button" onclick="printvalue()"
+value="print name"/>
+</form>
+</body>
+</html>

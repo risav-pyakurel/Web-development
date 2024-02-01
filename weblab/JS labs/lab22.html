@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button Form Submission</title>
+</head>
+<body>
+  <h2>Radio Button Form Submission Example</h2>
+  <form onsubmit="handleSubmit(event)">
+    Credit Card:
+    <input type="radio" name="payment" value="Credit Card" required>
+    <br>
+    Khalti:
+    <input type="radio" name="payment" value="Khalti" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+
+      var selectedPayment = document.querySelector('input[name="payment"]:checked');
+
+      if (selectedPayment) {
+        alert("Selected Payment Option: " + selectedPayment.value);
+      } else {
+        alert("Please select a payment option");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+</head>
+<body>
+  <h1>Select your gender </h1>
+  <form>
+    Male:
+    <input type="radio" name="gender" value="Male">
+    <br>
+    Female:
+    <input type="radio" name="gender" value="Female">
+    <br>
+    Prefer Not To Say:
+    <input type="radio" name="gender" value="Prefer Not To Say">
+    <br>
+    Transgender:
+    <input type="radio" name="gender" value="Transgender">
+    <br>
+    <button id="totalGenderButton">Total gender</button>
+  </form>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+     
+
+      var totalGenderButton = document.getElementById('totalGenderButton');
+
+      totalGenderButton.addEventListener('click', function () {
+        var allGenders = document.querySelectorAll('input[name="gender"]:checked');
+        alert("Total Gender: " + allGenders.length);
+      });
+    });
+  </script>
+</body>
+</html>

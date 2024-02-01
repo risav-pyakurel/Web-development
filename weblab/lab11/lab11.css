@@ -1,0 +1,25 @@
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+body {
+  font-family: Arial;
+}
+
+h1, h2,h3{
+  color: #890b0b;
+}
+
+p {
+  color: #3c3636;
+}
+footer{
+  
+  background-color: #32c471;
+  
+}
