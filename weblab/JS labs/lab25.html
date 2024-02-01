@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON sample</title>
+</head>
+<body>
+ 
+  <script>
+   
+    const car = {
+      make: "Toyota",
+      model: "Camry",
+      year: 2022,
+      color: "Silver"
+    };
+
+    const jsonStr = JSON.stringify(car);
+    console.log("JSON String:", jsonStr);
+    const parsedObject = JSON.parse(jsonStr);
+    console.log("Parsed Object:", parsedObject);
+  </script>
+</body>
+</html>

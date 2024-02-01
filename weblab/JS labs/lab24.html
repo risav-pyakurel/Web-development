@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Please enter a number between 100 and 200:</p>
+  <input id="userInput" type="text">
+  <button type="button" onclick="validateInput()">Check Input</button>
+  <p id="outputMessage"></p>
+
+  <script>
+    function validateInput() {
+      const userInput = document.getElementById("userInput").value;
+      const outputMessageElement = document.getElementById("outputMessage");
+
+      if (!userInput.trim()) {
+        outputMessageElement.innerHTML = "Input is empty";
+      } else if (isNaN(userInput)) {
+        outputMessageElement.innerHTML = "Input is not a number";
+      } else {
+        const numericValue = Number(userInput);
+
+        if (numericValue < 100 || numericValue > 200) {
+          outputMessageElement.innerHTML = "Input is out of range";
+        } else {
+          outputMessageElement.innerHTML = "Input is valid!";
+          alert("Input validation completed!");
+        }
+      }
+    }
+  </script>
+</body>
+</html>
